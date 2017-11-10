@@ -50,6 +50,7 @@ def getNews():
    	#this will only return the first 10000 results:
    	#understand and use:
    	#scrollId = res['_scroll_id']
+   	
 	#es.scroll(scroll_id = scrollId, scroll = '1m')
 
 	res = es.search(index='news', doc_type='news', body=doc, scroll='1m')
